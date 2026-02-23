@@ -1,14 +1,43 @@
-.first-label {
+@import url("reset.css");
+
+/* .first-label {
   font-size: 48px;
   background-color: beige;
-}
+} */
 
 #login {
   background-color: skyblue;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: all 1s;
+
+  padding: 8px 16px;
+  margin-top: 24px;
+}
+
+#login:hover {
+  background-color: red;
+  color: #fff;
+  transform: scale(1, 2);
+  transition: all 1s;
 }
 ul li {
   list-style: none;
+}
+
+h1 {
+  color: #0a799f;
+}
+
+h2 {
+  background-color: rgba(225, 112, 85, 0.3);
+}
+
+form {
+  padding: 20px 16px;
+}
+
+form + div {
+  margin-top: 20px;
 }
