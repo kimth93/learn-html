@@ -4,13 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My first WebPage</title>
+
+    <!--내부 스타일 시트-->
+    <style>
+      form {
+        background-color: pink;
+      }
+    </style>
+    <!-- 외부 스타일 시트 -->
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <!-- 폼 태그 -->
     <form action="">
       <!-- 입력 요소-->
       <div>
-        <label for="user-id">ID :</label>
+        <label for="user-id" class="first-label">ID :</label>
         <input
           type="text"
           id="user-id"
@@ -20,7 +29,7 @@
         />
       </div>
       <div>
-        <label for="user-pw">PASSWORD :</label>
+        <label for="user-pw" class="first-label">PASSWORD :</label>
         <input
           type="password"
           id="user-pw"
@@ -52,7 +61,7 @@
         <label for="female">여자</label>
       </div>
       <!-- <input type="submit" value="로그인"/> -->
-      <button type="submit">로그인</button>
+      <button type="submit" id="login">로그인</button>
     </form>
     <div>
       <p>안녕하세요</p>
@@ -79,13 +88,13 @@
 
     <!-- 수평선 -->
     <hr />
-    <p>
-      Lorem ipsum <span>dolor</span> sit amet consectetur adipisicing elit.
-      Reiciendis dignissimos vero nam accusantium mollitia commodi laborum sunt
-      vel laboriosam nihil, cumque perferendis ad quasi quae illo, at placeat
-      corporis deserunt sit pariatur. Consequatur rem qui in saepe quasi magni,
-      ullam voluptates autem eligendi repellendus laudantium perferendis
-      corrupti non quam reprehenderit
+    <p style="color: green">
+      Lorem ipsum <span style="color: red">dolor</span> sit amet consectetur
+      adipisicing elit. Reiciendis dignissimos vero nam accusantium mollitia
+      commodi laborum sunt vel laboriosam nihil, cumque perferendis ad quasi
+      quae illo, at placeat corporis deserunt sit pariatur. Consequatur rem qui
+      in saepe quasi magni, ullam voluptates autem eligendi repellendus
+      laudantium perferendis corrupti non quam reprehenderit
     </p>
     <h2>리스트 태그</h2>
     <ul>
